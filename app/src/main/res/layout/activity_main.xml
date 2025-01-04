@@ -109,7 +109,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline">
+        app:layout_constraintTop_toTopOf="@+id/txtaporte">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tieaporte"
@@ -129,11 +129,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/txtqntmeses"
         style="@style/hintlayout"
-        android:layout_margin="16dp"
+
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -155,11 +154,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/txtqntjuros"
         style="@style/hintlayout"
-        android:layout_margin="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -194,5 +191,39 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="76dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="33dp" />
+
+    <TextView
+        android:id="@+id/txtaporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aporte por mês:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <TextView
+        android:id="@+id/txtqntmeses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qtdes de meses:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/txtqntjuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juros %"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
