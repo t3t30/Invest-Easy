@@ -17,6 +17,11 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+    val aporte = binding.tieaporte
+    val meses = binding.txtmeses
+    val juros = binding.txtjuros
+    val total = binding.tvtotal
+    val lucro = binding.tvvalorrecebido
 
 
 
