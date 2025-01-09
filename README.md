@@ -32,5 +32,7 @@ This project was created to make financial planning more accessible, especially 
 <img src="https://github.com/user-attachments/assets/92aa496d-4faf-4926-a8c5-f29dbef088e8" width=260>
 
 
+## Em processo de internacionalização (suporte de idioma)
+
 
 
